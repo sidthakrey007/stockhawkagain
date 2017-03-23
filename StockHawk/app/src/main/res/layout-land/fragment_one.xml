@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.udacity.stockhawk.ui.OneFragment">
+
+    <com.db.chart.view.LineChartView
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/chart1"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:paddingEnd="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingStart="5dp"
+        android:layout_weight="2"
+        android:paddingBottom="5dp"
+
+        />
+
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.9"
+        android:columnCount="2"
+        android:background="@color/detailbackground"
+        android:useDefaultMargins="true"
+        android:paddingStart="4dp"
+        android:paddingLeft="4dp"
+        >
+        <android.support.v4.widget.Space
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+        />
+        <TextView
+            android:id="@+id/stockHeading"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Stock Exchange:"
+            android:textSize="18sp"
+            android:fontFamily=""
+            android:textColor="#FFFFFF"
+            android:layout_gravity="start|left"
+            />
+        <TextView
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="NASDAQ"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="start|left"
+            />
+
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Symbol:"
+            android:textSize="18sp"
+            android:fontFamily=""
+            android:textColor="#FFFFFF"
+            android:layout_gravity="start|left"
+            />
+        <TextView
+            android:id="@+id/symbol_detail"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Microsoft Inc"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="start|left"
+            />
+
+        <TextView
+
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Min Price:"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="start|left"
+            />
+        <TextView
+            android:id="@+id/minprice_detail"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Microsoft Inc"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="start|left"
+            />
+        <TextView
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Max Price:"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="start|left"
+            />
+        <TextView
+            android:id="@+id/maxprice_detail"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Microsoft Inc"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="start|left"
+            />
+
+        <android.support.v4.widget.Space
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            />
+
+    </GridLayout>
+</LinearLayout>

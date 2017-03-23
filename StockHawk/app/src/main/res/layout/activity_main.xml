@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.udacity.stockhawk.ui.MainActivity">
+
+ <android.support.design.widget.CoordinatorLayout
+     android:id ="@+id/coordinator"
+     android:layout_height="match_parent"
+     android:layout_width ="match_parent">
+
+     <android.support.design.widget.AppBarLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+
+
+         <android.support.v7.widget.Toolbar
+             android:id="@+id/myactionbar"
+             android:layout_width="match_parent"
+             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+             app:layout_scrollFlags="scroll|enterAlways"
+             android:elevation="0dp"
+             android:layout_height="wrap_content">
+
+             <android.support.v7.widget.SearchView
+                 android:id = "@+id/search"
+                 android:contentDescription="@string/accessibility_search_view"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"/>
+         </android.support.v7.widget.Toolbar>
+
+
+         <TextView
+             android:id="@+id/myactionbar_textview"
+             android:text="@string/action_bar_text"
+             android:fontFamily="sans-serif"
+             android:textColor="#FFFFFF"
+             android:textSize="36sp"
+             android:elevation="8dp"
+             app:layout_scrollFlags="scroll|enterAlways"
+             android:layout_gravity = "center_horizontal"
+             android:gravity="center_horizontal"
+             android:minHeight="?attr/listPreferredItemHeight"
+             android:layout_width="match_parent"
+             android:layout_height="?attr/listPreferredItemHeight"
+             />
+
+     </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:contentDescription="Hello all !!"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingStart="16dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingEnd="16dp"
+
+            android:background="#FFFFFF"/>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:onClick="button"
+        android:src="@drawable/fab_plus"
+        app:backgroundTint="@color/colorAccent"
+        android:contentDescription="@string/floating_action_button_desc"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp"/>
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:visibility="gone"
+        tools:text="Error message" />
+ </android.support.design.widget.CoordinatorLayout>
+</merge>

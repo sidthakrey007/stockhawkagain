@@ -1,0 +1,62 @@
+<resources>
+    <!-- Non translatable strings-->
+    <string name="app_name" translatable="false">Stock Hawk</string>
+
+
+    <string name="action_bar_text">Stock Hawk</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+
+    <string name="pref_stocks_initialized_key" translatable="false">initialized</string>
+    <string name="pref_stocks_key" translatable="false">stocks</string>
+    <string name="pref_display_mode_key" translatable="false">displayMode</string>
+    <string name="is_first_time" translatable="false">First</string>
+    <string name="pref_display_mode_default" translatable="false">@string/pref_display_mode_percentage_key</string>
+    <string name="checking_validity" translatable="false">checking</string>
+    <string name="pref_display_mode_absolute_key" translatable="false">absolute</string>
+    <string name="pref_display_mode_percentage_key" translatable="false">percentage</string>
+    <string name = "robotoLight" translatable="false">Roboto-Light.ttf</string>
+    <string name="robotoRegular" translatable="false">Roboto-Regular.ttf</string>
+    <string name="stock_dialog_fragment" translatable="false">StockDialogFragment</string>
+    <string name="default_stocks_yahoo" translatable="false">YHOO</string>
+    <string name="default_stocks_apple" translatable="false">AAPL</string>
+    <string name="accessibility_search_view">Search by stock quote</string>
+    <string name="default_stocks_microsoft" translatable="false">MSFT</string>
+    <string name="default_stocks_facebook" translatable="false">FB</string>
+    <string name="validation_status_key" translatable="false">validation_status</string>
+    <string name="action_change_units" translatable="false">@string/pref_display_mode_key</string>
+    <string name="query_like" translatable="false"> LIKE ?</string>
+    <string name="wild_char" translatable="false">%</string>
+    <!-- Translatable string Non Translatable-->
+    <string name="dialog_title">Add Stock</string>
+    <string name="dialog_hint">Symbol (e.g. GOOG)</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_add">Add</string>
+    <string name="error_no_network">No network connectivity! Will load stock cursor when the network is available.</string>
+    <string name="error_no_stocks">No stocks added! Hit the floating action button to add one.</string>
+    <string name="toast_stock_added_no_connectivity" >Sorry Network Connection unavailable! cannot add %s right now!</string>
+    <string name="toast_no_connectivity">Will refresh when network available.</string>
+    <string name = "demo_message1">Welcome! Add stocks to your list by clicking this button and providing the NASDAQ stock code for a particular stock</string>
+    <string name="demo_message_accept">GOT IT!</string>
+
+
+    <!--snackbar string-->
+    <string name="snackbar_add_success_msg" >Stock added Successfully !</string>
+    <string name="snackbar_accept">GOT IT!</string>
+    <string name="snackbar_alreay_exists">Stock already exists !</string>
+    <string name="empty_string" translatable="false"></string>
+    <string name="snackbar_invalid_stock_msg">The Stock name given is invalid</string>
+
+    <string name="symbol_name_key">SYMBOL_NAME</string>
+    <string name="accessibility_msg_1">On Date</string>
+    <string name="accessibility_msg_2">Price was</string>
+    <string name="accessibility_msg_3">dollars</string>
+
+    <string name="tab_onemonth">1 MONTH</string>
+    <string name="tab_threemonths">3 MONTHS</string>
+    <string name="tab_sixmonths">6 MONTHS</string>
+    <string name="usd" translatable="false"> USD</string>
+    <string name="floating_action_button_desc">Add Stock by entering stock quote</string>
+    <string name="demo_message_2">Whenver application is connected to internet. default stocks would be loaded.</string>
+    <string name="demo_message_3">Once the stocks are loaded you can use searc bar to search them in you list also you can swipe them to left/right to delete</string>
+</resources>
